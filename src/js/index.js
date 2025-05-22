@@ -16,10 +16,10 @@ navBar.addEventListener("click", (e) => {
     if (e.target.id === "home-button" && !e.target.classList.contains("current-nav-button")) {
         createHomePage(mainContainer, body);
     }
-    else if (e.target.id === "menu-button") {
+    else if (e.target.id === "menu-button" && !e.target.classList.contains("current-nav-button")) {
         createMenuPage(mainContainer, body);
     }
-    else if (e.target.id === "about-button") {
+    else if (e.target.id === "about-button" && !e.target.classList.contains("current-nav-button")) {
         createAboutPage(mainContainer, body);
     }
 })

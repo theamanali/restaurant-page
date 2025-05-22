@@ -1,4 +1,3 @@
-import steakOnGrillImg from "../img/steak_on_grill.jpg";
 import steakImg from "../img/steak.jpg";
 import saladImg from "../img/salad.jpg";
 import tenderImg from "../img/tender.jpg";
@@ -32,7 +31,7 @@ const menuItems = [
 ];
 
 export function createMenuPage(mainContainer, body) {
-    body.style.background = `url(${steakOnGrillImg}) no-repeat center center fixed`;
+    body.style.background = "#ae8544";
     body.style.backgroundSize = 'cover';
 
     const menuButton = document.getElementById("menu-button");
