@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    --main-accent-color: #ae8544;
+    --overlay-color: rgba(28, 15, 7, 0.9);
+    --white: #FDFDFB
+}
+
+body {
+    background: url("./img/restaurant-interior.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    font-family: system-ui, sans-serif;
+
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    flex: 0 0 auto;
+    background-color: var(--overlay-color);
+    padding: 24px;
+    border-radius: 0 0 48px 48px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+}
+
+header button {
+    font-size: 2em;
+    padding: 24px;
+
+    transition: 0.15s ease-in-out;
+    border: none;
+    background: none;
+    color: var(--main-accent-color);
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+header button:hover {
+    transition: 0.15s;
+    background-color: var(--main-accent-color);
+    color: var(--white);
+}
+
+#container {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    transition: 0.15s ease-in-out;
+    background-color: var(--overlay-color);
+    color: var(--white);
+    border-radius: 48px;
+    padding: 48px;
+    gap: 48px;
+}
+
+#content:hover{
+    transition: 0.15s ease-in-out;
+    transform: scale(1.1);
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+.home-subtext {
+    font-size: 2rem;
+}
+
+#content button {
+    font-size: 2em;
+    padding: 24px;
+
+    transition: 0.15s ease-in-out;
+    border: 2px solid var(--main-accent-color);
+    background: none;
+    color: var(--main-accent-color);
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+#content button:hover {
+    transition: 0.15s;
+    background-color: var(--main-accent-color);
+    color: var(--white);
+}
