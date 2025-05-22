@@ -1,4 +1,12 @@
-export function createHomePage(mainContainer) {
+import restaurantInterior from "../img/restaurant-interior.jpg";
+
+export function createHomePage(mainContainer, body) {
+    body.style.background = `url(${restaurantInterior}) no-repeat center center fixed`;
+    body.style.backgroundSize = 'cover';
+
+    mainContainer.style.justifyContent = "center";
+    mainContainer.style.alignItems = "center";
+
     const homeButton = document.getElementById("home-button");
     homeButton.classList.add("current-nav-button");
 
