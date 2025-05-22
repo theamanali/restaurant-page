@@ -51,7 +51,8 @@ header button,
 }
 
 header button:hover,
-#content button:hover{
+#content button:hover,
+.current-nav-button{
     transition: 0.1s;
     background-color: var(--main-accent-color);
     color: var(--white);
