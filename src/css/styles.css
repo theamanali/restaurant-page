@@ -157,7 +157,7 @@ h1 {
     gap: 8px;
 }
 
-.about-div h3 {
+.about-div h3
     align-self: center;
     margin-bottom: 16px;
 }
