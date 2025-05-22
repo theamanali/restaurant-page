@@ -27,7 +27,7 @@ body {
 header {
     flex: 0 0 auto;
     background-color: var(--overlay-color);
-    padding: 24px;
+    padding: 24px 48px;
     border-radius: 0 0 48px 48px;
 }
 
@@ -37,11 +37,12 @@ nav {
     gap: 48px;
 }
 
-header button {
+header button,
+#content button{
     font-size: 2em;
     padding: 24px;
 
-    transition: 0.15s ease-in-out;
+    transition: 0.1s ease-in-out;
     border: none;
     background: none;
     color: var(--main-accent-color);
@@ -49,8 +50,9 @@ header button {
     cursor: pointer;
 }
 
-header button:hover {
-    transition: 0.15s;
+header button:hover,
+#content button:hover{
+    transition: 0.1s;
     background-color: var(--main-accent-color);
     color: var(--white);
 }
@@ -68,7 +70,7 @@ header button:hover {
     align-items: center;
     justify-content: center;
 
-    transition: 0.15s ease-in-out;
+    transition: 0.1s ease-in-out;
     background-color: var(--overlay-color);
     color: var(--white);
     border-radius: 48px;
@@ -77,7 +79,7 @@ header button:hover {
 }
 
 #content:hover{
-    transition: 0.15s ease-in-out;
+    transition: 0.1s ease-in-out;
     transform: scale(1.1);
 }
 
@@ -90,19 +92,5 @@ h1 {
 }
 
 #content button {
-    font-size: 2em;
-    padding: 24px;
-
-    transition: 0.15s ease-in-out;
     border: 2px solid var(--main-accent-color);
-    background: none;
-    color: var(--main-accent-color);
-    border-radius: 24px;
-    cursor: pointer;
-}
-
-#content button:hover {
-    transition: 0.15s;
-    background-color: var(--main-accent-color);
-    color: var(--white);
 }
