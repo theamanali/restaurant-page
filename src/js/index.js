@@ -1,6 +1,7 @@
 import "../css/styles.css";
 import {createHomePage} from "./homepage";
 import {createMenuPage} from "./menu";
+import {createAboutPage} from "./about";
 
 const mainContainer = document.getElementById("container");
 const body = document.querySelector("body");

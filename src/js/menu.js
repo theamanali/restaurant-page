@@ -39,7 +39,7 @@ export function createMenuPage(mainContainer, body) {
 
     const menuHeader = document.createElement("h1");
     menuHeader.textContent = "The Menu";
-    menuHeader.classList.add("menu-header");
+    menuHeader.classList.add("content-header");
     mainContainer.appendChild(menuHeader);
 
     const menuContent = document.createElement("div");
@@ -57,7 +57,7 @@ function formatMenuItem(menuItem) {
     menuItemDiv.classList.add("menu-item");
 
     const itemHeader = document.createElement("h3");
-    itemHeader.classList.add("menu-item-header");
+    itemHeader.classList.add("subcontent-header");
     itemHeader.textContent = menuItem.name;
     menuItemDiv.appendChild(itemHeader);
 
